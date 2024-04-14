@@ -49,21 +49,5 @@ export default function TokenLeft() {
         )}
       </div>
     );
-
-  /*  useEffect(() => {
-        if (isWeb3Enabled) {
-          async function getleft() {
-            const currentTokenLeft = (await getCurrentStageTokensLeft()).toString();
-            setTokenLeft(currentTokenLeft);
-          }
-          getleft(); 
-        }
-    }, [isWeb3Enabled]);
-
-
-  return (
-    <div>
-      <h1>Token Left for Current Stage: {tokenLeft}</h1>
-    </div>
-  ); */
-}
+  }
+ 

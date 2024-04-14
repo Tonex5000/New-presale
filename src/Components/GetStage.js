@@ -44,4 +44,7 @@ export default function Stage() {
       {error ? (<p>Error: {error}</p>) : (<h1>Current Stage: {stage}</h1>)}
     </div>
   );
-}
+} 
+
+
+

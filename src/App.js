@@ -1,27 +1,30 @@
-import { MoralisProvider } from 'react-moralis';
-import Header from './component/Header';
-import Price from './component/GetPrice';
-import Stage from './component/GetStage';
-import HardCap from './component/GetHardCap';
-import TokenLeft from './component/TokenLeft';
-import TokenRaised from './component/TotalRaised';
-import Claim from './component/Claim';
-import { NotificationProvider } from '@web3uikit/core';
+'use client';
+import Home from "./Components/Home"
+import { MoralisProvider } from "react-moralis";
 
-function App() {
+
+const App = () => {
+
+
   return (
     <MoralisProvider initializeOnMount = {false}>
-      <NotificationProvider>
-        <Header />
-        <Price />
-       {/*  <Stage /> */}
-        <HardCap />
-        <TokenLeft />
-        <TokenRaised />
-        <Claim />
-      </NotificationProvider>
-    </MoralisProvider>
-  );
-}
+        <Home />
+     </MoralisProvider> 
+  )   
+};
 
 export default App;
+
+/* import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ChainId } from "@thirdweb-dev/sdk";
+import Home from "./component/Home";
+
+const activeChainId = ChainId.BinanceSmartChainTestnet; */
+
+/* return (
+  <ThirdwebProvider network={activeChainId}>
+    <Home />
+  </ThirdwebProvider>
+); */
+
+/* <MoralisProvider initializeOnMount = {false}> */

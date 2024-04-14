@@ -1,3 +1,5 @@
+
+
 import { useWeb3Contract } from "react-moralis";
 import { Presale_ABI, Presale_Address } from "../constants";
 import { useMoralis } from "react-moralis";
@@ -49,20 +51,4 @@ export default function HardCap() {
       </div>
     );
 
-/*    useEffect(() => {
-        if (isWeb3Enabled) {
-          async function getHardCap() {
-            const currentHardCap = (await getCurrentStageHardcap()).toString();
-            setHardCap(ethers.utils.formatUnits(currentHardCap, "ether"));
-          }
-          getHardCap(); 
-        }
-    }, [isWeb3Enabled]);
-
-
-  return (
-    <div>
-      {contAddress ? (<h1>Current Stage HardCap: {hardCap}BNB</h1>) : <div>No raffle detected </div>}
-    </div>
-  ); */
 }
